@@ -1,0 +1,152 @@
+.container{
+  	display: flex; 
+	color: #f7f7f7;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.headerIcon{
+	height: 17px;
+	width: 45px;
+}
+
+.hideInMobile{
+	display: none;
+}
+
+.imageProp{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+}
+
+.imageSmallProp{
+	width: 10%;
+	height: 10%;
+}
+
+.textDarkProp{
+	width: 120px;
+	height: 19px;
+	color: rgb(35, 36, 37);
+	text-align: center;
+	font-size: 16px;
+}
+
+.textLightProp{
+	width: 115px;
+	height: 14px;
+	color: rgb(146, 146, 146);
+	text-align: center;
+	font-size: 12px;
+}
+
+.cardProp{ 
+	width: 245px;
+	height: 300px;
+	border: 1px;
+	-webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 8);
+	box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 8);
+	border-radius: 3px;
+}
+
+@media (min-width: 451px) {
+	.container{
+	  	display: flex; 
+		color: #f7f7f7;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.optionProp{
+		width: 127px;
+		height: 30px;
+		background: rgb(255, 255, 255);
+		box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.08);
+		border-radius: 3px;
+	}
+
+	.hideInMobile{
+		display: block;
+	}
+
+	.hideInDesktop{
+		display: none;
+	}
+
+	.imageProp{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		/*flex-grow: 1;*/
+	}
+
+	.textDarkProp{
+		/*flex-grow: 3;*/
+		text-align: left;
+	}
+
+	.textLightProp{
+		/*flex-grow: 4;*/
+	}
+
+	.cardProp{
+		width: 1010px;
+		height: 45px;
+		border: 1px;
+		-webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 8);
+		box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 8);
+	}
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- https://source.unsplash.com/400x400/?headshot -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Screen</title>
+  	<link rel="stylesheet" href="salesforce-lightning-design-system.css">
+  	<link rel="stylesheet" href="extra.css">
+  	<script src="script.js"></script>
+</head>
+<body>
+<!-- <header class="slds-global-header_container"> -->
+	<div class="slds-global-header slds-grid slds-grid_align-spread">
+		<!-- <div class="slds-global-header__item hideInDesktop">
+			<div class="slds-global-header__logo">
+				<button class="hideInDesktop">&#9776;</button>
+			</div>	
+		</div> -->	
+		<div class="slds-global-header__item" style="width: max-content;">
+			<dl class="slds-text-title_caps">
+				<dt class="slds-text-heading_large">Xcor</dt>
+				<dd>Platform</dd>
+			</dl>
+			<!-- width: 130px;
+height: 50px; -->	
+		</div>
+		<div class="slds-global-actions">
+			<div class="slds-global-actions__item hideInMobile">
+				<span class="slds-p-horizontal_medium slds-border_right">Dashboard</span>	 
+			</div>
+			<div class="slds-global-actions__item">
+				<img src="images/notification-bell.png" alt="Notification Bell" class="slds-p-horizontal_small slds-border_right headerIcon" />
+			</div>
+			<div class="slds-global-actions__item">
+				<img src="images/user-icon.png" alt="User" class="slds-p-horizontal_small headerIcon" />
+			</div>	
+			<div class="slds-global-actions__item hideInMobile">
+				<span class="slds-p-horizontal_x-small">Stina Gunnarsdottir</span>
+			</div>	
+		</div>
+	</div>
+<!-- </header> -->
+<div class="slds-card ">
+<div class="slds-grid slds-gutters">
+	<div class="slds-col slds-size_2-of-12">
+		<div class="demo-only hideInMobile" style="background-color: #B9D2E5; box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.08);">
+		  	<nav class="slds-nav-vertical" aria-label="Sub page">
+		    	<div class="slds-nav-vertical__section">
+		      		<h2 id="entity-header" class="slds-nav-vertical__title">SUMMARY</h2>
+		      		<ul aria-describedby="entity-header">
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action" aria-current="true">Account Summary</a>
+		        		</li>
+		      		</ul>
+		    	</div>
+		    	<div class="slds-nav-vertical__section">
+		      		<h2 id="folder-header" class="slds-nav-vertical__title">INVESTMENTS</h2>
+		      		<ul aria-describedby="folder-header">
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">My Investments</a>
+		        		</li>
+		        		<li class="slds-nav-vertical__item slds-is-active">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">Investor List</a>
+		        		</li>
+		      		</ul>
+		    	</div>
+		    	<div class="slds-nav-vertical__section">
+		      		<h2 id="folder-header" class="slds-nav-vertical__title">DOCUMENTS</h2>
+		      		<ul aria-describedby="folder-header">
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">My Document</a>
+		        		</li>
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">Delegate Document</a>
+		        		</li>
+		      		</ul>
+		    	</div>
+		    	<div class="slds-nav-vertical__section">
+		      		<h2 id="folder-header" class="slds-nav-vertical__title">TRANSACTIONS</h2>
+		      		<ul aria-describedby="folder-header">
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">My Transactions</a>
+		        		</li>
+		      		</ul>
+		    	</div>
+		    	<div class="slds-nav-vertical__section">
+		      		<h2 id="folder-header" class="slds-nav-vertical__title">DELEGATE</h2>
+		      		<ul aria-describedby="folder-header">
+		        		<li class="slds-nav-vertical__item">
+		          			<a href="javascript:void(0);" class="slds-nav-vertical__action">My Delegate</a>
+		        		</li>
+		      		</ul>
+		    	</div>
+		    	<div class="slds-nav-vertical__section">
+		      		<h3 id="folder-header" class="slds-nav-vertical__item">© 2019 XCOR. All Rights Reserved.</h3>
+		    	</div>
+		  	</nav>
+		</div>
+	</div>
+	<div class="slds-col slds-size_10-of-12">
+		<!-- <div class="slds-card-wrapper"> -->
+		    <!-- <article class="slds-card "> -->
+		    	<article class="slds-card">
+		    		<div class="slds-card__body slds-card__body_inner container">
+		    			<div class="slds-text-align_left textDarkProp hideInMobile">
+		    				Investor List
+		    			</div>
+		    			<div class="slds-align_absolute-center hideInMobile">
+		    				<div class="slds-form-element">
+  								<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+    								<!-- <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+      									<use xlink:href="C:/Users/purus/Desktop/PS/UI-UX-training/Day6/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+    								</svg> -->
+    								<input type="text" id="text-input-id-1" placeholder="Search by Name or Email…" class="slds-input" style="box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.08);" />
+  								</div>
+							</div>
+		    			</div>
+  						<div class="slds-align_absolute-center hideInMobile">
+		    				<div class="slds-form-element">
+							  	<div class="slds-form-element__control">
+    								<div class="slds-combobox_container slds-size_small">
+      									<div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+        									<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right optionProp" role="none">
+          										<input type="text" class="slds-input slds-combobox__input" id="combobox-id-1" aria-controls="listbox-id-1" autocomplete="off" role="textbox" placeholder="Both" readonly="" />
+          										<!-- <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+            										<svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+              											<use xlink:href="C:/Users/purus/Desktop/PS/UI-UX-training/Day6/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+            										</svg>
+          										</span> -->
+        									</div>
+        									<div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+          										<ul class="slds-listbox slds-listbox_vertical" role="presentation">
+            										<li role="presentation" class="slds-listbox__item">
+              											<div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                											<span class="slds-media__figure slds-listbox__option-icon"></span>
+                											<span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option A">Option A</span>
+                											</span>
+              											</div>
+            										</li>
+            										<li role="presentation" class="slds-listbox__item">
+              											<div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+											                <span class="slds-media__figure slds-listbox__option-icon"></span>
+											                <span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option B">Option B</span>
+                											</span>
+              											</div>
+										            </li>
+										            <li role="presentation" class="slds-listbox__item">
+              											<div id="option3" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+											                <span class="slds-media__figure slds-listbox__option-icon"></span>
+											                <span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option ABCDEFGHIJKLMNOPQRSTUVWXYZ">Option ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                											</span>
+              											</div>
+            										</li>
+          										</ul>
+        									</div>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+		    			</div>
+		    			<div class="slds-align_absolute-center hideInMobile">
+		    				<div class="slds-form-element">
+							  	<div class="slds-form-element__control">
+    								<div class="slds-combobox_container slds-size_small">
+      									<div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+        									<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right optionProp" role="none">
+          										<input type="text" class="slds-input slds-combobox__input" id="combobox-id-1" aria-controls="listbox-id-1" autocomplete="off" role="textbox" placeholder="All" readonly="" />
+          										<!-- <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+            										<svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+              											<use xlink:href="C:/Users/purus/Desktop/PS/UI-UX-training/Day6/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+            										</svg>
+          										</span> -->
+        									</div>
+        									<div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+          										<ul class="slds-listbox slds-listbox_vertical" role="presentation">
+            										<li role="presentation" class="slds-listbox__item">
+              											<div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                											<span class="slds-media__figure slds-listbox__option-icon"></span>
+                											<span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option A">Option A</span>
+                											</span>
+              											</div>
+            										</li>
+            										<li role="presentation" class="slds-listbox__item">
+              											<div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+											                <span class="slds-media__figure slds-listbox__option-icon"></span>
+											                <span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option B">Option B</span>
+                											</span>
+              											</div>
+										            </li>
+										            <li role="presentation" class="slds-listbox__item">
+              											<div id="option3" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+											                <span class="slds-media__figure slds-listbox__option-icon"></span>
+											                <span class="slds-media__body">
+                  												<span class="slds-truncate" title="Option ABCDEFGHIJKLMNOPQRSTUVWXYZ">Option ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                											</span>
+              											</div>
+            										</li>
+          										</ul>
+        									</div>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+						</div>	
+						<div class="slds-align_absolute-center hideInDesktop">
+							<div id="mySidebar" class="sidebar hideInDesktop">
+								<a href="#">
+									<dl class="slds-text-title_caps">
+										<dt class="slds-text-heading_large">Xcor</dt>
+										<dd>Platform</dd>
+									</dl>
+								</a>	
+							  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+							  	<a href="#">SUMMARY</a>
+							  	<a href="#">INVESTMENTS</a>
+							  	<a href="#">DOCUMENTS</a>
+							  	<a href="#">TRANSACTIONS</a>
+							  	<a href="#">DELEGATE</a>
+							</div>
+							<div id="main">
+								<button class="slds-button slds-button_neutral openbtn" onclick="openNav()">☰</button>
+							</div>
+						</div>	
+						<!-- <div >
+							<button class="slds-button slds-button_neutral openbtn">List View</button>
+							<button class="slds-button slds-button_neutral openbtn">Card View</button>
+						</div> -->
+		    		</div>	
+		    	</article>	
+		    	<article class="slds-card slds-m-around_small container hideInMobile">
+		    		<div class="slds-card__body slds-card__body_inner">
+		    			<div class="slds-grid">
+		    				<div class="slds-col slds-size_1-of-12"></div>
+		    				<div class="slds-col slds-size_2-of-12 slds-m-left_medium slds-m-vertical_x-small textLightProp">Name
+		    				</div>
+		    				<div class="slds-col slds-size_1-of-12"></div>
+		    				<div class="slds-col slds-size_2-of-12 slds-m-left_medium textLightProp slds-m-vertical_x-small">Total Contributions
+		    				</div>
+		    				<div class="slds-col slds-size_2-of-12 slds-m-left_xx-large slds-m-right_medium slds-m-vertical_x-small textLightProp">Total Distributions
+		    				</div>		    				
+		    				<div class="slds-col slds-size_3-of-12 slds-m-left_xx-large slds-m-right_x-small slds-m-vertical_x-small textLightProp">Total Balance
+		    				</div>
+		    				<div class="slds-col slds-size_1-of-12 slds-m-left_xx-large slds-m-vertical_x-small textLightProp">Details
+		    				</div>
+		    			</div>	
+		    		</div>
+		    	</article>	
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>     	
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p1.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div> 
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			        	<div class="slds-align_absolute-center">
+			            	<img src="images/p2.jpg" alt="headimage" class="imageProp" />
+			        	</div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p3.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p4.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p5.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p6.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p7.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p8.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article><br/>
+			    <article class="slds-card slds-card_boundary cardProp">
+			        <div class="slds-card__body slds-card__body_inner container">
+			        	<div class="slds-float_right hideInDesktop">
+			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+			        	</div>
+			            <div class="slds-align_absolute-center">
+			            	<img src="images/p9.jpg" alt="headimage" class="imageProp" /> 
+			            </div><br/>
+			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+			            <div class="slds-align_absolute-center hideInMobile">
+			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+					            <span class="slds-assistive-text">Link</span>
+					        </a>
+					    </div>  
+			        </div>
+			        <footer class="slds-card__footer hideInDesktop">
+			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+			            <span class="slds-assistive-text">Link</span>
+			        </a>
+			        </footer>
+			    </article>
+			<!-- </article> -->
+		<!-- </div> -->
+	</div>	
+</div>	
+</div>
+	<!-- <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-small" aria-haspopup="true" title="Show More">
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xlink:href="symbols-rtl.svg"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+    </div> -->	
+</body>
+</html>
