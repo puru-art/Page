@@ -226,6 +226,10 @@ height: 50px; -->
 							<div id="main">
 								<button class="slds-button slds-button_neutral openbtn" onclick="openNav()">☰</button>
 							</div>
+						</div>
+						<div id="btnContainer" class="hideInMobile">
+							<button class="btn active" data-trigger="list-view" onclick="listView()">L</button>
+							<button class="btn" data-trigger="card-view" onclick="cardView()">C</button>
 						</div>	
 						<!-- <div >
 							<button class="slds-button slds-button_neutral openbtn">List View</button>
@@ -251,240 +255,258 @@ height: 50px; -->
 		    			</div>	
 		    		</div>
 		    	</article>	
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>     	
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p1.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div> 
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			        	<div class="slds-align_absolute-center">
-			            	<img src="images/p2.jpg" alt="headimage" class="imageProp" />
-			        	</div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p3.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p4.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p5.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p6.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p7.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p8.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article><br/>
-			    <article class="slds-card slds-card_boundary cardProp">
-			        <div class="slds-card__body slds-card__body_inner container">
-			        	<div class="slds-float_right hideInDesktop">
-			        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
-			        	</div>
-			            <div class="slds-align_absolute-center">
-			            	<img src="images/p9.jpg" alt="headimage" class="imageProp" /> 
-			            </div><br/>
-			            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
-			            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
-			            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
-			            <div class="slds-align_absolute-center hideInMobile">
-			            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
-					            <span class="slds-assistive-text">Link</span>
-					        </a>
-					    </div>  
-			        </div>
-			        <footer class="slds-card__footer hideInDesktop">
-			        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
-			            <span class="slds-assistive-text">Link</span>
-			        </a>
-			        </footer>
-			    </article>
+		    	<div class="dCards" data-view="list-view">
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>     	
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p1.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div> 
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>    
+				<div class="dCards" data-view="list-view">
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				        	<div class="slds-align_absolute-center">
+				            	<img src="images/p2.jpg" alt="headimage" class="imageProp" />
+				        	</div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p3.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p4.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p5.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p6.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>    
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p7.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p8.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article><br/>
+				</div>
+				<div class="dCards" data-view="list-view">    
+				    <article class="slds-card slds-card_boundary cardProp">
+				        <div class="slds-card__body slds-card__body_inner container">
+				        	<div class="slds-float_right hideInDesktop">
+				        		<img src="images/threedots.png" alt="dotsimage" class="imageSmallProp" />
+				        	</div>
+				            <div class="slds-align_absolute-center">
+				            	<img src="images/p9.jpg" alt="headimage" class="imageProp" /> 
+				            </div><br/>
+				            <div class="slds-align_absolute-center textDarkProp">Ivan Magalhães</div>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">abcdef@xyz.com</div><br/>
+				            <div class="slds-align_absolute-center hideInDesktop textLightProp">Total Contributions</div>
+				            <div class="slds-align_absolute-center textDarkProp">$ 821,243</div>
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile textDarkProp">$ 821,243</div> 
+				            <div class="slds-align_absolute-center hideInMobile">
+				            	<a class="slds-card__footer-action" href="javascript:void(0);">View Details
+						            <span class="slds-assistive-text">Link</span>
+						        </a>
+						    </div>  
+				        </div>
+				        <footer class="slds-card__footer hideInDesktop">
+				        <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+				            <span class="slds-assistive-text">Link</span>
+				        </a>
+				        </footer>
+				    </article>
+				</div>
 			<!-- </article> -->
 		<!-- </div> -->
 	</div>	
